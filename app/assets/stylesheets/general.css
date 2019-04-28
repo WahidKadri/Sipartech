@@ -1,9 +1,15 @@
 h1 {
+  font-family: 'Cunia';
   font-size: 30px;
   color: #0781B2;
   font-weight: bold;
   margin-bottom: 27px;
   margin-top:0px;
+  text-shadow: 1px 1px 3px lightslategrey;
+}
+
+body {
+  background-color: #F4F4F4;
 }
 
 .plugin {
