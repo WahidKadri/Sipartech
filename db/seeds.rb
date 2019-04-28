@@ -29,29 +29,29 @@ require 'json'
 # puts 'Finished!'
 
 
-puts "Creating Haute-Savoie commune's hash..."
+# puts "Creating Haute-Savoie commune's hash..."
 
-url = "https://public.opendatasoft.com/api/records/1.0/search/?dataset=correspondance-code-insee-code-postal&q=haute+savoie&rows=294&facet=postal_code&facet=nom_comm&facet=superficie&facet=population&facet=z_moyen&refine.nom_dept=HAUTE-SAVOIE"
+# url = "https://public.opendatasoft.com/api/records/1.0/search/?dataset=correspondance-code-insee-code-postal&q=haute+savoie&rows=294&facet=postal_code&facet=nom_comm&facet=superficie&facet=population&facet=z_moyen&refine.nom_dept=HAUTE-SAVOIE"
 
-haute_savoie_infos = open(url).read
-parsed_json = JSON.parse(haute_savoie_infos)
-records = parsed_json["records"]
+# haute_savoie_infos = open(url).read
+# parsed_json = JSON.parse(haute_savoie_infos)
+# records = parsed_json["records"]
 
-communes = []
-attribut = {}
-records.each do |record|
-  attribut = {
-    postal_code: record["fields"]["postal_code"],
-    commune_name: record["fields"]["nom_comm"],
-    altitude_moyenne: record["fields"]["z_moyen"],
-    superficie: record["fields"]["superficie"],
-    population: record["fields"]["population"]
-  }
-  communes << attribut
-end
+# communes = []
+# attribut = {}
+# records.each do |record|
+#   attribut = {
+#     postal_code: record["fields"]["postal_code"],
+#     commune_name: record["fields"]["nom_comm"],
+#     altitude_moyenne: record["fields"]["z_moyen"],
+#     superficie: record["fields"]["superficie"],
+#     population: record["fields"]["population"]
+#   }
+#   communes << attribut
+# end
 
-communes.each do |commune|
-  Commune.create!(commune)
-end
+# communes.each do |commune|
+#   Commune.create!(commune)
+# end
 
-puts 'Finished!'
+# puts 'Finished!'
