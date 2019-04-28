@@ -15,6 +15,37 @@
 
   <h1 class="plugin">Plugin "DataTable"</h1>
 
+  <table id="my-table" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Code Postal</th>
+        <th>Commune</th>
+        <th>Altitude moyenne</th>
+        <th>Superficie</th>
+        <th>Population</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @communes.each do |commune| %>
+        <tr>
+          <td><%= commune.postal_code %></td>
+          <td><%= commune.commune_name %></td>
+          <td><%= commune.altitude_moyenne %></td>
+          <td><%= commune.superficie %></td>
+          <td><%= commune.population %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Code Postal</th>
+        <th>Commune</th>
+        <th>Altitude moyenne</th>
+        <th>Superficie</th>
+        <th>Population</th>
+      </tr>
+    </tfoot>
+  </table>
 
   <div class="spacer"></div>
 </div>

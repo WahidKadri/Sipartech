@@ -16,7 +16,12 @@
 //= require_tree .
 //= require jquery
 //= require chosen
+//= require DataTables
 
 $(document).on('turbolinks:load', function(){
   $(".chosen-select").chosen({no_results_text: "Oops, nothing found!", width: "100%"});
+});
+
+$(document).on('turbolinks:load', function(){
+  $('#my-table').DataTable();
 });

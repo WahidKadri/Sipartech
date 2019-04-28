@@ -14,4 +14,6 @@
  *= require_self
  *= require chosen
  *= require chosen-bootstrap
+ *= require DataTables
+ *= require general
  */

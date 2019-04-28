@@ -1,0 +1,15 @@
+h1 {
+  font-size: 30px;
+  color: #0781B2;
+  font-weight: bold;
+  margin-bottom: 27px;
+  margin-top:0px;
+}
+
+.plugin {
+  padding: 50px 0 20px 0;
+}
+
+.spacer {
+  margin-bottom: 60px;
+}

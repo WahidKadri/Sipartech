@@ -64,4 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 source 'https://rails-assets.org' do
   gem 'rails-assets-chosen'
   gem 'rails-assets-chosen-bootstrap' # if using bootstrap
+  gem 'rails-assets-DataTables'
 end
