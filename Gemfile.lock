@@ -128,12 +128,8 @@ GEM
       sprockets-rails (>= 2.0.0)
     rails-assets-DataTables (1.10.16)
       rails-assets-jquery (>= 1.7.0)
-    rails-assets-bootstrap (4.3.1)
     rails-assets-chosen (1.4.2)
       rails-assets-jquery (>= 1.4.4)
-    rails-assets-chosen-bootstrap (1.1.0)
-      rails-assets-bootstrap (>= 3.0.0)
-      rails-assets-chosen (~> 1.4.0)
     rails-assets-jquery (3.4.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -216,7 +212,6 @@ DEPENDENCIES
   rails (~> 5.2.3)
   rails-assets-DataTables!
   rails-assets-chosen!
-  rails-assets-chosen-bootstrap!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
